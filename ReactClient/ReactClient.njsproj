@@ -1,0 +1,217 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>ReactClient</Name>
+    <RootNamespace>ReactClient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>238adbc3-9d57-4496-813e-32841c59f6bd</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".prettierignore" />
+    <Content Include=".prettierrc" />
+    <Content Include="gatsby-browser.js" />
+    <Content Include="gatsby-config.js" />
+    <Content Include="gatsby-node.js" />
+    <Content Include="gatsby-ssr.js" />
+    <Content Include="LICENSE" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="src\components\footer\footer-container.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\footer\footer-view.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\footer\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\header.js" />
+    <Content Include="src\components\image.js" />
+    <Content Include="src\components\layout-old.js" />
+    <Content Include="src\components\layout.css" />
+    <Content Include="src\components\layout\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\layout\layout-container.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\layout\layout-view.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\layout\style.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\login\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\login\login-container.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\login\login-view.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\login\style.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\navbar\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\navbar\navbar-container.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\navbar\navbar-view.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\navbar\style.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\widget-messages\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\widget-messages\messages-container.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\widget-messages\messages-view.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\seo.js" />
+    <Content Include="src\components\widget-messages\messages.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\widget-text\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\widget-text\text-container.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\widget-text\text-view.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\widget-text\text.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\images\gatsby-astronaut.png" />
+    <Content Include="src\images\gatsby-icon.png" />
+    <Content Include="src\images\icon.png" />
+    <Content Include="src\images\logo-curacao.png" />
+    <Content Include="src\pages\404.js" />
+    <Content Include="src\pages\application-selector.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\pages\old-index.js" />
+    <Content Include="src\pages\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\pages\page-2.js" />
+    <Content Include="src\state\actions.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\state\reducers\components\login.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\state\reducers\components\navbar.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\state\reducers\components\widget-messages.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\state\reducers\components\widget-text.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\state\reducers\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\state\reducers\user.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\state\store.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\utils\auth.js">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\login\" />
+    <Folder Include="src\components\footer\" />
+    <Folder Include="src\components\navbar\" />
+    <Folder Include="src\components\layout\" />
+    <Folder Include="src\components\widget-messages\" />
+    <Folder Include="src\components\widget-text\" />
+    <Folder Include="src\components\widget\" />
+    <Folder Include="src\images\" />
+    <Folder Include="src\utils\" />
+    <Folder Include="src\state\" />
+    <Folder Include="src\pages\" />
+    <Folder Include="src\state\reducers\" />
+    <Folder Include="src\state\reducers\components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\pages\using-typescript.tsx" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

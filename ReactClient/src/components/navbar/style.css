@@ -1,0 +1,38 @@
+nav.navbar {
+    padding: 0;
+    height: 40px;
+}
+    nav.navbar .home-icon{
+        margin-left: 1rem;
+    }
+
+    nav.navbar a, nav.navbar span.right-text {
+        font-size: 0.8rem;
+    }
+
+    nav.navbar ul li {
+        margin-bottom: 0;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    nav.navbar ul li a {
+        height: 40px;
+    }
+
+    nav.navbar ul li.dropdown:hover .dropdown-menu {
+        display: block;
+        margin: 0;
+        border-width: 0;
+        border-radius: 0;
+        background-color: #f8f9fa;
+    }
+
+        nav.navbar ul li.dropdown:hover .dropdown-menu a {
+            color: rgba(0, 0, 0, 0.5);
+        }
+            nav.navbar ul li.dropdown:hover .dropdown-menu a:hover {
+                color: rgba(0, 0, 0, 0.9);
+            }
+
+
